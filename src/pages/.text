@@ -1,0 +1,43 @@
+import React from "react";
+
+// HeroSection.jsx
+// Tailwind CSS component that mimics the layout in your image.
+// Uses an image placed at '/mnt/data/d868fee2a3a31892ce0fe3b9d62a78e1.webp'
+
+export default function HeroSection() {
+  return (
+    <div className="relative w-full h-screen  overflow-hidden ">
+     <div className="z-1 h-screen w-full">
+         {/* Background Image */}
+      <img
+        src="hbb.jpg"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover "
+      />
+
+      Black to Transparent Gradient Overlay
+      <div className="absolute inset-0  bg-black/20" />
+     </div>
+      <div className="w-full absolute top-0 left-0 flex justify-center items-center py-10 z-2 h-screen ">
+       <div className="h-[650px] w-[680px] scale-120 backdrop-blur-sm bg-gray-600/20 rounded-full "></div>
+        
+       
+      </div>
+      <div className="h-screen absolute top-0 left-0 z-4 pt-30 w-full flex  items-center flex-col">
+          <div>
+            <h1 className="text-[9vw] scale-y-150 origin-bottom font-extrabold font-[Bebas Neue] capitalize text-white  ">raj Rathore</h1>
+          </div>
+        </div>
+         <div className="w-full absolute top-0 left-0 flex justify-center items-center py-10 z-6 h-screen ">
+       <div className="h-[500px] w-[500px] scale-125 backdrop-blur-[1px] bg-zinc-950/10 rounded-full "></div>
+        
+       
+      </div>
+         <div className="w-full absolute top-40 left-0 flex justify-center items-center py-10 z-10 h-screen ">
+        <img src="./jsx.png" alt="" className=" scale-135 object-cover" />
+        
+       
+      </div>
+    </div>
+  );
+}

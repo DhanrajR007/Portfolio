@@ -1,0 +1,56 @@
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://fonts.gstatic.com/s/montserrat/v26/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* Satisfy */
+@font-face {
+  font-family: 'Satisfy';
+  src: url('https://fonts.gstatic.com/s/satisfy/v15/rP2Hp2yn6lkG50LoOZSCHBeHFl0.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Smooch Sans */
+@font-face {
+  font-family: 'Smooch';
+  src: url('https://fonts.gstatic.com/s/smoochsans/v8/cIf9MaFatEE-VTaP9CChYUsER3Q.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Allura';
+  src: url('https://fonts.gstatic.com/s/allura/v14/9oRPNYsQpS4zjuA_hQgWaqQ.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('https://fonts.gstatic.com/s/bebasneue/v15/JTUSjIg69CK48gW7PXoo9Wlhzg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* 🎨 Colors */
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-primary: #4f46e5; /* violet/indigo */
+  --color-secondary: #14b8a6; /* teal */
+  --color-accent: #f59e0b; /* amber */
+  --color-border: #e5e7eb;
+
+  /* 🌙 Dark mode */
+  [data-theme='dark'] {
+    --color-bg: #0f172a;
+    --color-text: #f8fafc;
+    --color-primary: #6366f1;
+    --color-secondary: #2dd4bf;
+    --color-accent: #fbbf24;
+    --color-border: #334155;
+  }
+}
