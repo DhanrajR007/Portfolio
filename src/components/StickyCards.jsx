@@ -37,6 +37,7 @@ const StickyCards = () => {
   ];
 
   const container = useRef(null);
+
   useGSAP(() => {
     const stickyCards = document.querySelectorAll(".sticky-card");
     stickyCards.forEach((card, index) => {
@@ -59,12 +60,7 @@ const StickyCards = () => {
             const progress = self.progress;
             const scale = 1 - progress * 0.25;
             const rotation = (index % 2 === 0 ? 5 : -5) * progress;
-            const afterOpacity = progress;
-            gsap.set(card, {
-              scale: scale,
-              rotation: rotation,
-              "--after-opacity": afterOpacity,
-            });
+            gsap.set(card, { scale, rotation });
           },
         });
       }
@@ -72,19 +68,33 @@ const StickyCards = () => {
   }, { scope: container });
 
   return (
-    <div
-      className="sticky-cards relative w-full h-full "
-      ref={container}
-    >
+    <div ref={container} className="sticky-cards relative w-full h-full">
       {stickyCardsData.map((cardData, index) => (
         <div
           key={index}
-          className="rounded-4xl sticky-card relative w-full h-[90svh] bg-[#edf1e8] text-[#1a1a1a] p-6 flex gap-12 will-change-transform 
-          bg-cover
-          max-[1000px]:flex-col max-[1000px]:gap-0"
-            style={{ backgroundImage: `url(${cardData.image})` }}
+          className="sticky-card relative w-full h-[60vh] bg-[#edf1e8] text-[#1a1a1a] flex items-center justify-between 
+                     p-10 rounded-3xl shadow-md bg-cover bg-center will-change-transform
+                     max-[1000px]:flex-col max-[1000px]:h-auto max-[1000px]:text-center max-[1000px]:p-6"
+          style={{ backgroundImage: `url(${cardData.image})` }}
         >
-         
+          <div className="absolute inset-0 bg-black/30 rounded-3xl"></div>
+
+          <div className="relative z-10 w-1/2 max-[1000px]:w-full">
+            <h2 className="text-4xl font-bold mb-3 max-[1000px]:text-2xl">
+              {cardData.title}
+            </h2>
+            <p className="text-base leading-relaxed max-[1000px]:text-sm">
+              {cardData.description}
+            </p>
+          </div>
+
+          <div className="relative z-10 w-1/2 max-[1000px]:w-full h-[40vh] max-[1000px]:h-[30vh] rounded-2xl overflow-hidden">
+            <img
+              src={cardData.image}
+              alt={cardData.title}
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
         </div>
       ))}
     </div>

@@ -26,17 +26,17 @@ export default function HeroSection() {
 
       <div className="h-screen absolute top-0 left-0 z-4 pt-50 w-full flex  items-center flex-col">
         <div>
-          <h1 className="text-[9vw] scale-y-200 origin-bottom font-extrabold font-[Bebas Neue] uppercase tracking-tighter text-white  ">
+          <h1 className="text-7xl lg:text-[9vw] text-center scale-y-200 origin-bottom font-extrabold font-[Bebas Neue] uppercase tracking-tighter text-white  ">
             Dhanraj Rathore
           </h1>
         </div>
       </div>
 
-      <div className="w-full absolute top-50 left-0 flex justify-center items-center py-10 z-10 h-screen ">
-        <img src="./jsx.png" alt="" className=" scale-140 object-cover " />
+      <div className="w-2/3 lg:w-full absolute lg:top-50 top-20 left-20 flex justify-center items-center py-10 z-10 h-screen ">
+        <img src="./jsx.png" alt="" className=" lg:scale-140 object-cover " />
       </div>
-      <div className="w-full absolute text-zinc-50/90 top-50 left-0 px-10 flex justify-between py-10 z-15 h-screen ">
-        <div className="flex flex-col  py-20 w-1/4 ">
+      <div className="hidden lg:block w-full absolute text-zinc-50/90 top-50 left-0 px-10  py-10 z-15 h-screen ">
+        <div className="flex flex-col  py-20 lg:w-1/4 ">
           <div className="pt-20">
             <h1>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
@@ -56,15 +56,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-end justify-end py-50  w-1/4">
-          <div>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto est ut a repudiandae commodi officia ex soluta, laborum
-              voluptatum ducimus.
-            </h1>
-          </div>
-        </div>
+       
       </div>
     </div>
   );
