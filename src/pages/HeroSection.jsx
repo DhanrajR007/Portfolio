@@ -8,19 +8,24 @@ export default function HeroSection() {
   return (
     <div className="relative w-full h-screen  overflow-hidden ">
       <div className="z-1 h-screen w-full">
-        {/* Background Image
-      <img
-        src="bbb.jpg"
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover "
-      />
-
-      Black to Transparent Gradient Overlay */}
-
-        <div  style={{ width: "100%", height: "1000px", position: "relative" }}>
-          <DarkVeil />
+        <div className="absolute inset-0 z-0">
+        {/* Background Video */}
+        <img src="https://i.pinimg.com/1200x/20/82/dd/2082ddb96f142f9e0df954c8a66541a7.jpg" className="h-full w-full object-cover" alt="" />
+        {/* <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+          src="https://sheryians.com/Assets/images/cfda4326e42bda5e9a3120f31640c4f9-ezgif.com-video-speed.m4v" // ⚠️ use your own local video or a direct MP4 link
+        ></video> */}
         </div>
-        <div className="absolute inset-0 bg-black/50" />
+
+        <div  className="h-screen w-full">
+          {/* <DarkVeil /> */}
+         
+        </div>
+        <div className="absolute z-1 inset-0 bg-black/60" />
       </div>
       {/* <div className="absolute top-0 left-0 w-[120vw] -mt-100 -ml-40 h-[130vh] z-10 rounded-full bg-[radial-gradient(circle,_#FAF062_1%,_transparent_55%)] backdrop-blur-[1px]"></div> */}
 
@@ -32,7 +37,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="w-2/3 lg:w-full absolute lg:top-50 top-20 left-20 flex justify-center items-center py-10 z-10 h-screen ">
+      <div className="w-2/3 lg:w-full absolute lg:top-50 top-20 left-0 flex justify-center items-center py-10 z-10 h-screen ">
         <img src="./jsx.png" alt="" className=" lg:scale-140 object-cover " />
       </div>
       <div className="hidden lg:block w-full absolute text-zinc-50/90 top-50 left-0 px-10  py-10 z-15 h-screen ">

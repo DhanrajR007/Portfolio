@@ -72,23 +72,23 @@ const StickyCards = () => {
       {stickyCardsData.map((cardData, index) => (
         <div
           key={index}
-          className="sticky-card relative w-full h-[60vh] bg-[#edf1e8] text-[#1a1a1a] flex items-center justify-between 
+          className="sticky-card relative w-full h-[80vh] bg-[#edf1e8] text-[#1a1a1a] flex items-center justify-between 
                      p-10 rounded-3xl shadow-md bg-cover bg-center will-change-transform
-                     max-[1000px]:flex-col max-[1000px]:h-auto max-[1000px]:text-center max-[1000px]:p-6"
+                     max-[1030px]:flex-col max-[1030px]:h-[70vh] max-[1000px]:text-center "
           style={{ backgroundImage: `url(${cardData.image})` }}
         >
           <div className="absolute inset-0 bg-black/30 rounded-3xl"></div>
 
           <div className="relative z-10 w-1/2 max-[1000px]:w-full">
-            <h2 className="text-4xl font-bold mb-3 max-[1000px]:text-2xl">
+            <h2 className="text-6xl font-bold mb-3 max-[1000px]:text-2xl">
               {cardData.title}
             </h2>
-            <p className="text-base leading-relaxed max-[1000px]:text-sm">
+            <p className="text-xl leading-relaxed max-[1000px]:text-sm">
               {cardData.description}
             </p>
           </div>
 
-          <div className="relative z-10 w-1/2 max-[1000px]:w-full h-[40vh] max-[1000px]:h-[30vh] rounded-2xl overflow-hidden">
+          <div className="relative z-10 w-2/3 max-[1000px]:w-full  h-[45vh] max-[1000px]:h-[30vh] rounded-2xl overflow-hidden">
             <img
               src={cardData.image}
               alt={cardData.title}

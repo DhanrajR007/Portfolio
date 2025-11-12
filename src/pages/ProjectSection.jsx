@@ -4,11 +4,11 @@ import StickyCards from "../components/StickyCards";
 
 const ProjectSection = () => {
   return (
-    <div className="px-20 py-10 rounded-b-[50px] bg-white text-black ">
-      <div className="py-10">
+    <div className="px-10 py-2  lg:py-10 rounded-b-[50px] bg-white text-black ">
+      <div className="lg:py-10 overflow-hidden">
         <div className="text-center ">
           <svg
-            className="mx-auto -mb-6 w-full"
+            className="mx-auto -mb-25 h-[400px] lg:mb-0 w-full"
             width="2000"
             height="250"
             viewBox="0 0 956 166"
@@ -32,13 +32,14 @@ const ProjectSection = () => {
             <rect width="100%" height="100%" fill="transparent" />
 
             <text
+            className="text-[33vh] h-[400px] leading-none lg:text-9xl "
               x="50%"
               y="62%"
               text-anchor="middle"
               dominant-baseline="middle"
               font-family="Montserrat, Arial, sans-serif"
               font-weight="700"
-              font-size="120"
+            
               letter-spacing="2"
               fill="url(#paint0_linear_projects)"
             >
@@ -46,13 +47,14 @@ const ProjectSection = () => {
             </text>
 
             <text
+            className="text-[33vh] leading-none lg:text-9xl"
               x="50%"
               y="62%"
               text-anchor="middle"
               dominant-baseline="middle"
               font-family="Montserrat, Arial, sans-serif"
               font-weight="700"
-              font-size="120"
+             
               letter-spacing="2"
               fill="none"
               stroke="#00000003"
