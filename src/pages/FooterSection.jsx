@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
   return (
     <div>
-      <div className="relative rounded-t-[50px] border border-white/20 w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      <div className="relative  rounded-t-[50px] border border-white/20 w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
         {/* Background Image */}
         <img
           src="hbb.jpg"
@@ -48,17 +49,35 @@ const FooterSection = () => {
           <div className="flex justify-between items-center flex-wrap gap-6 text-white px-20 max-[1024px]:px-10 max-[768px]:flex-col max-[768px]:px-4">
             <div className="px-5 py-2 rounded-full border border-white/50 text-center">
               <h1 className="font-medium font-[Montserrat] text-sm">
-                123-654-8988
+                <a
+                  href="https://www.linkedin.com/in/dhanraj-rathore-89b201292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Linkedin
+                </a>
+              </h1>
+            </div>
+            <div className="px-5 py-2 rounded-full border border-white/50 text-center">
+              <h1 className="font-medium decoration-0 font-[Montserrat] text-sm">
+                <a
+                  href="https://x.com/Dhanraj09182120"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  X-Twitter
+                </a>
               </h1>
             </div>
             <div className="px-5 py-2 rounded-full border border-white/50 text-center">
               <h1 className="font-medium font-[Montserrat] text-sm">
-                @dhanraj.x.com
-              </h1>
-            </div>
-            <div className="px-5 py-2 rounded-full border border-white/50 text-center">
-              <h1 className="font-medium font-[Montserrat] text-sm">
-                business12@gmail.com
+                <a
+                  href="https://github.com/DhanrajR007"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
               </h1>
             </div>
           </div>

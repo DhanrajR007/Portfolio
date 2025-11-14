@@ -1,6 +1,11 @@
 import React from "react";
 
 const Navbar = () => {
+    function sendMail() {
+    
+    const mail = `mailto:dhanrajrathore1111@gmail.com?subject=New`;
+    window.location.href = mail;
+  }
   return (
     <div>
       <div className=" fixed z-30 w-full flex lg:px-10 px-4 py-3  justify-between items-center">
@@ -9,15 +14,15 @@ const Navbar = () => {
         </div>
         <div className="flex items-center justify-center gap-5">
           <div className=" lg:block hidden cursor-pointer bg-black/10 backdrop-blur-sm hover:bg-[#4f46e5] transition-all   w-auto h-8 py-1 px-5 rounded-3xl text-center  border border-[#4f46e5]">
-            <h1 className="text-sm text-white font-medium font-[Montserrat]">Who I'm?</h1>
+            <h1 className="text-sm text-white font-medium font-[Montserrat]"> <a className="decoration-0 transition-all " href="#about">Who I'm?</a></h1>
           </div>
           <div className=" lg:block hidden sm:hidden cursor-pointer bg-black/10 backdrop-blur-sm  hover:bg-[#4f46e5] transition-all  w-auto h-8 py-1 px-5 rounded-3xl text-center  border border-[#4f46e5]">
             <h1 className="text-sm text-white font-medium font-[Montserrat]">
-              Proof of Work
+              <a className="decoration-0 transition-all " href="#projects">Proof of Work</a>
             </h1>
           </div>
           <div className="group transition duration-1000 cursor-pointer w-34 px-1 lg:px-3 h-9 justify-between rounded-3xl text-center gap-3 bg-[#4f46e5] text-white flex items-center">
-          <div className="px-2 lg:px-0">
+          <div   onClick={sendMail} className="px-2 lg:px-0">
               <h1 className="text-sm font-[Montserrat]">
               Let's Talk
             </h1>
