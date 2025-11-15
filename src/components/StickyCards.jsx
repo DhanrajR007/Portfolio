@@ -72,7 +72,7 @@ const StickyCards = () => {
       {stickyCardsData.map((cardData, index) => (
         <div
           key={index}
-          className="sticky-card relative w-full h-[80vh] bg-[#edf1e8] text-[#1a1a1a] flex items-center justify-between 
+          className="sticky-card mt-3 relative w-full h-[80vh] bg-[#edf1e8] text-[#eee] flex items-center justify-between 
                      p-10 rounded-3xl shadow-md bg-cover bg-center will-change-transform
                      max-[1030px]:flex-col max-[1030px]:h-[70vh] max-[1000px]:text-center "
           style={{ backgroundImage: `url(${cardData.image})` }}

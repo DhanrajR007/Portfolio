@@ -31,35 +31,34 @@ export default function NeonCrystalCards() {
     <div
       className="min-h-screen "
       style={{
-        backgroundImage: "url('https://i.pinimg.com/1200x/1a/b4/fb/1ab4fbc5cc8e9e9c93bdd72076035e89.jpg')",
+        backgroundImage: "url('https://i.pinimg.com/736x/8a/0d/1e/8a0d1e6d82a107b9eb4a0589d79465e1.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     > 
-    <hr className="mt-4 h-px block lg:hidden bg-white" />
 
       <div
-        className="min-h-screen w-full p-4 pb-15 lg:pb-0 sm:p-8 flex flex-col gap-10 sm:gap-20 bg-black/50"
-        style={{
-          backgroundImage:
-            "url('https://sheryians.com/Assets/images/master-grid.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+        className="min-h-screen w-full p-4 pb-15 lg:pb-0 backdrop-blur-xs sm:p-8 flex flex-col gap-10 sm:gap-20 bg-black/20"
+        // style={{
+        //   backgroundImage:
+        //     "url('https://sheryians.com/Assets/images/master-grid.png')",
+        //   backgroundSize: "cover",
+        //   backgroundPosition: "center",
+        // }}
       >
-        <div className="text-center  ">
-          <img className="h-20 lg:h-32 mx-auto  object-bottom w-full lg:w-2/3" src="./hhs.png" alt="" />
+        <div className=" ">
+         <h1 className="text-(--color-primary) font-medium font-[Smooch Sans] text-2xl max-[768px]:text-xl lg:mb-6">// Services </h1>
         </div>
         <div className="flex items-center justify-center">
           <div className="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 px-2">
             {cards.map((card, idx) => (
               <div
                 key={card.id}
-                className="relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-4 sm:p-6 pt-8 shadow-2xl transition-transform duration-300 hover:scale-[1.02]"
+                className="relative rounded-2xl border border-white/10 bg-black/10 backdrop-blur-xs p-4 sm:p-6 pt-8 shadow-2xl transition-transform duration-300 hover:scale-[1.02]"
                 style={{ transform: idx === 1 ? "translateY(-13px)" : "none" }}
               >
                 <div className="relative mb-4 sm:mb-6">
-                  <div className="w-full h-40 sm:h-56 rounded-xl overflow-hidden bg-gradient-to-b from-black/8 to-transparent border border-white/5">
+                  <div className="w-full h-40 sm:h-56 rounded-xl overflow-hidden bg-gradient-to-b from-white/8 to-transparent border border-white/5">
                     <img
                       src={card.img}
                       alt="crystal"

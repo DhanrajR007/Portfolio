@@ -16,7 +16,7 @@ const App = () => {
         <HeroSection />
         <AboutSection />
         <ProjectSection />
-        <ServicesSection/>
+        {/* <ServicesSection/> */}
         <FooterSection />
       </ReactLenis>
     </div>

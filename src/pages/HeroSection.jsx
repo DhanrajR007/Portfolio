@@ -37,22 +37,20 @@ export default function HeroSection() {
           </h1>
         </div>
         <div className="flex items-end justify-end w-full lg:px-10 text-right">
-          <p className="lg:text-6xl font-medium text-white font-[Satisfy]">
-            Web Developer
+          <p className="lg:text-7xl text-4xl wrap text-left  font-medium text-white font-[Satisfy]">
+            Web <br className="block lg:hidden" /> Developer
           </p>
         </div>
       </div>
 
-      <div className="w-2/3 lg:w-full absolute lg:top-50 top-20 lg:left-0 left-15  flex justify-center items-center pt-25 lg:py-10 z-10 h-screen ">
-        <img src="./jsx.png" alt="" className=" lg:scale-140 object-cover " />
+      <div className="w-2/3 lg:w-full absolute lg:top-70 top-20 lg:left-0 left-15  flex justify-center items-center pt-25 lg:py-10 z-10 h-screen ">
+        <img src="./rbb.png" alt="" className=" lg:scale-160 object-cover " />
       </div>
       <div className="hidden lg:block  w-full absolute text-zinc-50/90 top-50 left-0 lg:px-10  py-10 z-15 h-screen ">
         <div className="flex lg:flex-col flex-row justify-end pt-35 lg:py-20 lg:w-1/4 ">
           <div className="pt-5">
             <h1 className="">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-              quisquam veritatis enim rem veniam aspernatur temporibus repellat
-              quo hic omnis.
+              I create modern web apps, explore AI, and turn ideas into smooth digital experiences. I build fast, clean, and smart solutions that truly work.
             </h1>
             <div className=" w-15 h-15 flex  gap-3 pt-4">
               <div className=" bg-[#4f46e5] text-white lg:px-3 text-xl text-center w-12 h-12 p-2 lg:py-2 rounded-full">

@@ -12,15 +12,13 @@ const AboutSection = () => {
       <div className="flex justify-between w-full flex-wrap lg:py-5 gap-8">
         <div className="w-[30%] max-[1024px]:w-[45%] max-[768px]:w-full pt-10">
           <h1 className="text-lg leading-relaxed max-[768px]:text-base">
-            Design is not just a job for me, it's a passion that drives me.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            officiis? Nostrum animi repudiandae nemo aliquam?
+            I build clean and fast web apps with MERN, explore AI tools, and love making ideas come alive on screen. I enjoy learning new tech every day and creating work that looks good, feels smooth, and helps people.
           </h1>
         </div>
 
-        <div className="w-[50%] max-[1024px]:w-[50%] max-[768px]:w-full">
-          <h1 className="text-8xl font-bold font-[Bebas Neue] leading-tight max-[1024px]:text-6xl max-[768px]:text-5xl">
-            Design is my passion.
+        <div className="w-[55%] max-[1024px]:w-[50%] max-[768px]:w-full">
+          <h1 className="text-7xl scale-y-122 font-bold font-[Bebas Neue] leading-tight max-[1024px]:text-6xl max-[768px]:text-5xl">
+          Creating experiences, not just websites
           </h1>
         </div>
       </div>
@@ -39,21 +37,19 @@ const AboutSection = () => {
         {/* Stats */}
         <div className="w-[45%] max-[1024px]:w-full">
           <div className="lg:pb-10">
-            <h1 className="text-6xl py-3 font-[Montserrat] font-medium max-[768px]:text-4xl">
-              +200
+            <h1 className="text-5xl py-3 font-[Montserrat] font-medium max-[768px]:text-4xl">
+              +30
             </h1>
-            <h2 className="text-md text-zinc-500 max-[768px]:text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-              eum. Lorem ipsum dolor sit amet consectetur adipisicing.
+            <h2 className="text-lg text-zinc-500 max-[768px]:text-sm">
+              Created polished interfaces that look good, feel fast, and work smoothly.
             </h2>
           </div>
           <div className="lg:pb-10">
-            <h1 className="text-6xl py-3 font-[Montserrat] font-medium max-[768px]:text-4xl">
-              +250
+            <h1 className="text-5xl py-3 font-[Montserrat] font-medium max-[768px]:text-4xl">
+              +10
             </h1>
-            <h2 className="text-md text-zinc-500 max-[768px]:text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
-              eum. Lorem ipsum dolor sit amet consectetur adipisicing.
+            <h2 className="text-lg text-zinc-500 max-[768px]:text-sm">
+              Built full systems that connect UI, backend, and real-world user needs.
             </h2>
           </div>
         </div>

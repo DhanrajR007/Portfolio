@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const FooterSection = () => {
   return (
     <div>
-      <div className="relative  rounded-t-[50px] border border-white/20 w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      <div className="relative  rounded-t-[50px] border -mt-10 border-white/20 w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
         {/* Background Image */}
         <img
           src="hbb.jpg"
